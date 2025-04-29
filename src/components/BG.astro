@@ -1,0 +1,17 @@
+---
+import { Image } from 'astro:assets';
+import BGTexture from '../../assets/texture.png';
+---
+
+<div class=" absolute h-full w-full overflow-y-clip">
+    <Image src={BGTexture} alt={"Background Texture"}  />
+    <div class=" fixed min-h-screen w-full background-gra max-h-screen -bottom-[25%] -right-[55%]"/>
+</div>
+
+<style>
+    .background-gra{
+        border-radius: 983px;
+background: radial-gradient(152.32% 145.81% at 50% 50%, rgba(105, 30, 220, 0.60) 0%, #7EEAF6 35.49%, #E0FAFF 94.82%);
+filter: blur(150px);
+    }
+</style>

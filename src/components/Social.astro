@@ -1,0 +1,12 @@
+---
+import { Icon } from 'astro-icon/components'
+import { SocialsData } from '../constants/data';
+---
+
+<div class="flex gap-4 justify-between px-8">
+    {SocialsData.map((social) => (
+    <a href={social.link} target="_blank" rel="noopener noreferrer" class="flex items-center gap-2   bg-[rgb(105,30,220)] h-[2.5rem] aspect-square rounded-full p-2 justify-center">
+        <Icon name={social.iconName} class={"text-2xl"}/>
+    </a>
+    ))}
+</div>
