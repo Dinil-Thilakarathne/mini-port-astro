@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@layer utilities {
+  .header-1 {
+    @apply text-xl font-semibold lg:text-2xl;
+  }
+
+  .desc{
+    @apply text-sm lg:text-base text-pretty;
+  }
+
+  .content-container {
+    @apply py-6;
+  }
+
+  a{
+    @apply underline
+  }
+}
