@@ -1,16 +1,29 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Profile from '../components/Profile.astro';
+import About from '../components/About.svelte';
+import Projects from '../components/Projects.svelte';
+import Works from '../components/Works.svelte';
+import { ProfileData } from '../constants/data';
+import BG from '../components/BG.astro';
+import Social from '../components/Social.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+	<BG/>
+	<div class="container relative mx-auto grid py-2 lg:grid-cols-[20%_1fr] overflow-x-clip">
+		<div class=" sticky inset-y-4 left-0 top-0 h-screen right-0 flex flex-col justify-between pb-16">
+			<Profile name={ProfileData.name} description={ProfileData.slug} />
+			<Social/>
+		</div>
+		
+		<div class="grid w-full lg:grid-cols-[1fr_20%]  relative">
+		<div class="  relative">
+			<About />
+			<Projects />
+			<Works/>
+			<Works/>
+		</div>
+    </div>
+  </div>
+</Layout>
