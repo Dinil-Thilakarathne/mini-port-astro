@@ -3,15 +3,21 @@ import { Image } from 'astro:assets';
 import BGTexture from '../../assets/texture.png';
 ---
 
-<div class=" absolute h-full w-full overflow-y-clip">
-    <Image src={BGTexture} alt={"Background Texture"}  />
-    <div class=" fixed min-h-screen w-full background-gra max-h-screen -bottom-[25%] -right-[55%]"/>
+<div class="absolute h-full w-full overflow-y-clip *:select-none" role="presentation">
+  <Image src={BGTexture} alt={'Background Texture'} aria-hidden="true" />
+  <div class="background-gra fixed -right-[55%] -bottom-[25%] max-h-screen min-h-screen w-full">
+  </div>
 </div>
 
 <style>
-    .background-gra{
-        border-radius: 983px;
-background: radial-gradient(152.32% 145.81% at 50% 50%, rgba(105, 30, 220, 0.60) 0%, #7EEAF6 35.49%, #E0FAFF 94.82%);
-filter: blur(150px);
-    }
+  .background-gra {
+    border-radius: 983px;
+    background: radial-gradient(
+      152.32% 145.81% at 50% 50%,
+      rgba(105, 30, 220, 0.6) 0%,
+      #7eeaf6 35.49%,
+      #e0faff 94.82%
+    );
+    filter: blur(150px);
+  }
 </style>

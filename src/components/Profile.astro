@@ -5,9 +5,9 @@ import profileImg from '../../assets/profile_img.png';
 const { name, description } = Astro.props;
 ---
 
-<figure class="pr-8">
+<figure>
   <Image src={profileImg} alt="Profile" class="w-full rounded-xl" />
-  <figcaption class=" pr-4">
+  <figcaption class="pr-4">
     <h1 class="header-1">{name}</h1>
     <p class="desc">{description}</p>
   </figcaption>

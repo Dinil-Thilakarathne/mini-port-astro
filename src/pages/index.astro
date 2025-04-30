@@ -7,23 +7,29 @@ import Works from '../components/Works.svelte';
 import { ProfileData } from '../constants/data';
 import BG from '../components/BG.astro';
 import Social from '../components/Social.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
-	<BG/>
-	<div class="container relative mx-auto grid py-2 lg:grid-cols-[20%_1fr] overflow-x-clip">
-		<div class=" sticky inset-y-4 left-0 top-0 h-screen right-0 flex flex-col justify-between pb-16">
-			<Profile name={ProfileData.name} description={ProfileData.slug} />
-			<Social/>
-		</div>
-		
-		<div class="grid w-full lg:grid-cols-[1fr_20%]  relative">
-		<div class="  relative">
-			<About />
-			<Projects />
-			<Works/>
-			<Works/>
-		</div>
+  <BG />
+  <div
+    class="relative container mx-auto grid items-center gap-x-2 overflow-x-clip py-2 lg:grid-cols-[22%_1fr] lg:gap-x-6"
+  >
+    <div
+      class="sticky inset-y-4 top-0 right-0 left-0 flex h-[calc(100vh-32px)] flex-col justify-between"
+    >
+      <Profile name={ProfileData.name} description={ProfileData.slug} />
+      <Social />
+    </div>
+
+    <div class="relative grid w-full lg:grid-cols-[1fr_20%]">
+      <div class="relative">
+        <About />
+        <Projects />
+        <Works />
+        <Works />
+        <Footer />
+      </div>
     </div>
   </div>
 </Layout>
