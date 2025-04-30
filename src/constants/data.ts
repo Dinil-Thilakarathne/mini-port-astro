@@ -32,6 +32,18 @@ export const projectData: Project[] = [
     ],
   },
   {
+    title: 'Portfolio Site',
+    description:
+      'A personal portfolio website showcasing my projects, skills, and creative front-end experiments with modern design and animations.',
+    link: 'https://dinilthilakarathne.vercel.app/',
+    itemList: [
+      'Practiced creating modern, responsive layout structures',
+      'Explored advanced animation techniques using Framer Motion',
+      'Experimented with creative UI patterns and micro-interactions',
+      'Enhanced understanding of performance-conscious front-end design',
+    ],
+  },
+  {
     title: 'Hackathon Team Dashboard (still cooking!!)',
     description:
       'A web app to manage and showcase hackathon team details, built with Next.js and MongoDB.',
@@ -40,18 +52,6 @@ export const projectData: Project[] = [
       'Implemented dynamic routing and data fetching',
       'Practiced CRUD operations',
       'Improved TypeScript type safety',
-    ],
-  },
-  {
-    title: 'Sona Code Demos',
-    description:
-      'A personal showcase of modern front-end UI experiments, built to highlight skills in creative web development through animated layouts and cutting-edge design patterns.',
-    link: 'https://sonaui.vercel.app/private', // Update with actual demo URL if available
-    itemList: [
-      'Practiced creating modern, responsive layout structures',
-      'Explored advanced animation techniques using Framer Motion',
-      'Experimented with creative UI patterns and micro-interactions',
-      'Enhanced understanding of performance-conscious front-end design',
     ],
   },
 ];
@@ -91,23 +91,34 @@ export const worksData: Work[] = [
     ],
     link: 'https://intellihack.ieeecsucsc.org/',
   },
+  {
+    title: 'Sona Code Demos',
+    description:
+      'A personal showcase of modern front-end UI experiments, built to highlight skills in creative web development through animated layouts and cutting-edge design patterns.',
+    link: 'https://sonacode-demos.vercel.app/', 
+    itemList: [
+      'Practiced creating modern, responsive layout structures',
+      'Explored advanced animation techniques using Framer Motion',
+      'Experimented with creative UI patterns and micro-interactions',
+      'Enhanced understanding of performance-conscious front-end design',
+    ],
+  },
 ];
 
-
 export const SocialsData = [
-    {
-        name: 'GitHub',
-        link: "https://github.com/Dinil-Thilakarathne",
-        iconName: "Github/white"
-    },
-    {
-        name: 'LinkedIn',
-        link: "https://www.linkedin.com/in/dinil-thilakarathne/",
-        iconName: "LinkedIN/white"
-    },
-    {
-        name: 'Instagram',
-        link: "https://www.instagram.com/sona_code/",
-        iconName: "Instagram/white"
-    },
-]
+  {
+    name: 'GitHub',
+    link: 'https://github.com/Dinil-Thilakarathne',
+    iconName: 'Github/white',
+  },
+  {
+    name: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/dinil-thilakarathne/',
+    iconName: 'LinkedIN/white',
+  },
+  {
+    name: 'Instagram',
+    link: 'https://www.instagram.com/sona_code/',
+    iconName: 'Instagram/white',
+  },
+];
