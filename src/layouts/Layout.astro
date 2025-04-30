@@ -9,9 +9,32 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://dinil-info.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dinil.Info" />
+    <meta
+      property="og:description"
+      content=" fast, modern portfolio website built with Astro and Svelte. Showcasing my work, projects, and creative web development journey."
+    />
+    <meta property="og:image" content="https://dinil-info.vercel.app/og_img.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="dinil-info.vercel.app" />
+    <meta property="twitter:url" content="https://dinil-info.vercel.app/" />
+    <meta name="twitter:title" content="Dinil.Info" />
+    <meta
+      name="twitter:description"
+      content=" fast, modern portfolio website built with Astro and Svelte. Showcasing my work, projects, and creative web development journey."
+    />
+    <meta name="twitter:image" content="https://dinil-info.vercel.app/og_img.png" />
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
     <title>Dinil.Info</title>
   </head>
-  <body class="min-h-screen w-full bg-slate-100 overflow-x-clip relative">
+  <body class="relative min-h-screen w-full overflow-x-clip bg-slate-100">
     <slot />
   </body>
 </html>
