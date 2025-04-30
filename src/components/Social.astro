@@ -3,14 +3,14 @@ import { Icon } from 'astro-icon/components';
 import { SocialsData } from '../constants/data';
 ---
 
-<div class="flex justify-between gap-2">
+<div class="flex justify-between gap-2 px-8 md:px-0">
   {
     SocialsData.map((social) => (
       <a
         href={social.link}
         target="_blank"
         rel="noopener noreferrer"
-        class="desc flex items-center p-2 text-[rgb(105,30,220)]"
+        class="desc flex items-center text-[rgb(105,30,220)]"
       >
         <span>{social.name}</span>
       </a>
