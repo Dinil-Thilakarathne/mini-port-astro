@@ -1,5 +1,5 @@
 export const ProfileData = {
-  name: 'Dinil Thilakrathne',
+  name: 'Dinil Thilakarathne',
   slug: 'I code creatively—and sometimes design too!',
 };
 
